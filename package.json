@@ -1,0 +1,43 @@
+{
+  "name": "dsh-plugin-global-prompt",
+  "description": "DSH plugin: a global-prompt textarea in Settings > General, injected into every conversation's system prompt",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "prompt",
+    "global-prompt"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@gitee.com:chasechan/dsh-plugin-global-prompt.git"
+  },
+  "license": "MIT",
+  "dsh": {
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-api-remotes"
+      ],
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "^3.18.1"
+  }
+}
