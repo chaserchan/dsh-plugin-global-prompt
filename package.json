@@ -1,6 +1,6 @@
 {
   "name": "dsh-plugin-global-prompt",
-  "description": "DSH plugin: a global-prompt textarea in Settings > General, injected into every conversation's system prompt",
+  "description": "DSH 插件：在「设置 → 通用设置」新增全局 Prompt 输入框，注入每次对话（含子代理）的系统提示词，保存即生效。",
   "version": "0.1.1",
   "type": "module",
   "main": "lib/index.js",
