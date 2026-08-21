@@ -1,7 +1,7 @@
 {
   "name": "dsh-plugin-global-prompt",
   "description": "DSH plugin: a global-prompt textarea in Settings > General, injected into every conversation's system prompt",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
