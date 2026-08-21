@@ -1,0 +1,6 @@
+# dsh-plugin-global-prompt bundle patch: installing this package into a profile
+# automatically enables the plugin (adds the loader row). A profile's own
+# cordis.patch.yml may override this row by the same id.
+- insert:
+    - id: global-prompt
+      name: 'dsh-plugin-global-prompt'
